@@ -5,10 +5,9 @@ import { IKnowledge } from '../../interface/IKnowledge.interface';
   selector: 'app-knowledge',
   imports: [],
   templateUrl: './knowledge.html',
-  styleUrl: './knowledge.scss'
+  styleUrl: './knowledge.scss',
 })
 export class Knowledge {
-
   public arrayKnowledge = signal<IKnowledge[]>([
     {
       src: 'assets/icons/html.svg',
@@ -25,6 +24,14 @@ export class Knowledge {
     {
       src: 'assets/icons/angular.svg',
       alt: 'Angular',
+    },
+    {
+      src: 'assets/icons/next-js.svg',
+      alt: 'Next.js',
+    },
+    {
+      src: 'assets/icons/react.svg',
+      alt: 'React',
     },
     {
       src: 'assets/icons/java.svg',
@@ -45,6 +52,6 @@ export class Knowledge {
     {
       src: 'assets/icons/sass.svg',
       alt: 'SaSS',
-    }
-  ])
+    },
+  ]);
 }
